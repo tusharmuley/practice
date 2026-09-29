@@ -84,3 +84,7 @@ print("Employees with Salary > 60000:", salary_data)
 print("Employees who know Python:", know_python)
 print("Employees in Pune:", pune_emp)
 print("Total Salary of Active Employees:", total_active_emp)
+
+
+
+
