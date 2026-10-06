@@ -44,12 +44,24 @@ def armstrong_number(num):
         return True
     else:
         return False
-      
+
+# write a program that returns the factors of given number 
+def factors_of_number(num):
+    result =[]
+    # for i in range(1,num+1):
+    # for i in range(1,num//2):
+    for i in range(1,int(math.sqrt(num))):
+        if num % i ==0:
+            result.append(i)
+            if i != num//i:
+                result.append(num//i)
+    # result.append(num)
+    return result
     
-    
-    
-n = 153
+n=36
 print("sum of digits is: ",sum_of_digits(n))
 print("count of digits is: ",count_digits(n))
 print("check palindrome number: ",check_palindrome_number(n))
 print("check armstrong number: ",armstrong_number(n))
+print("factors of  number: ",factors_of_number(n))
+
