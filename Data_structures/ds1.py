@@ -57,11 +57,24 @@ def factors_of_number(num):
                 result.append(num//i)
     # result.append(num)
     return result
-    
+# return the frequecy in dictinry.  
+def frequecy_dict(arr):
+    hashmap ={}
+    for i in  arr:
+        # if i in hashmap:
+        #     hashmap[i] = hashmap[i] +1
+        # else:
+        #     hashmap[i] = 1
+        hashmap[i] = hashmap.get(i,0)+1
+    return hashmap
+
+arr = [1,2,2,1,3]
+
 n=36
 print("sum of digits is: ",sum_of_digits(n))
 print("count of digits is: ",count_digits(n))
 print("check palindrome number: ",check_palindrome_number(n))
 print("check armstrong number: ",armstrong_number(n))
 print("factors of  number: ",factors_of_number(n))
+print("frequency of numbers: ",frequecy_dict(arr))
 
