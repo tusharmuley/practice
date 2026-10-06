@@ -19,7 +19,37 @@ def count_digits(num):
         
     return count
 
+def check_palindrome_number(num):
+    n=num
+    result = 0
+    while num >0:
+        last_digit = num%10
+        result = (result*10) + last_digit
+        num = num//10
+        
+    if n == result:
+        return True 
+    else :
+        return False
 
-n = 587367
+def armstrong_number(num):
+    n=num
+    total =0
+    nod= len(str(n))
+    while n > 0:
+        last_digit = n%10
+        total += last_digit**nod
+        n=n//10
+    if num == total:
+        return True
+    else:
+        return False
+      
+    
+    
+    
+n = 153
 print("sum of digits is: ",sum_of_digits(n))
 print("count of digits is: ",count_digits(n))
+print("check palindrome number: ",check_palindrome_number(n))
+print("check armstrong number: ",armstrong_number(n))
