@@ -78,3 +78,5 @@ print("check armstrong number: ",armstrong_number(n))
 print("factors of  number: ",factors_of_number(n))
 print("frequency of numbers: ",frequecy_dict(arr))
 
+
+a = 
