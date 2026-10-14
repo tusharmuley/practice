@@ -67,3 +67,33 @@ def reverse1(arr,left,right):
     return arr 
 
 print("reverse using while loop",reverse1(arr,0,len(arr)-1))
+
+
+
+#palindrome stiring using while loop
+def palindrome(string,left, right):
+    while left <=right:
+        if string[left] != string[right]:
+            return False
+        left+=1
+        right-=1
+        
+    return True  #tc = O(n/2), sc= O(n)
+
+def palindrome1(string,left,right):
+    if left >=right:
+        return True
+    if string[left] != string[right]:
+        return False
+    
+    return palindrome(string,left+1, right-1)
+
+def count_obj(string,i):
+    
+    for i in string:
+        count+=1
+    return count
+
+string = "nitkktin"
+print("is palindrome :",palindrome(string,0,count_obj(string,0)-1))
+print("is palindrome :",palindrome1(string,0,len(string)-1))
