@@ -7,6 +7,13 @@ def func1(count):
     
 func1(4)
 
+def func4(i,n):
+    if i >n:
+        return
+    func4(i+1,n)
+    print(i)
+    
+func4(1,4)
 
 def func2(sum,i,n):
     if i>n:
